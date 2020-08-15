@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>ca.tonyfield.minecraftmonitor.agent</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>__INSTALLDIR__/minemon.sh</string>
+            <string>__TIMELIMIT__</string>
+        </array>
+        <key>StandardOutPath</key>
+        <string>__INSTALLDIR__/log/out.log</string>
+        <key>StandardErrorPath</key>
+        <string>__INSTALLDIR__/log/err.log</string>
+        <key>StartInterval</key>
+        <integer>10</integer>
+        <key>RunAtLoad</key>
+        <true/>
+    </dict>
+</plist>

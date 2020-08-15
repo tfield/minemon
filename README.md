@@ -20,7 +20,7 @@ The script utilizes CPU time, not "real time".  Thus if the game is currently si
 The script has been verified to work on macOS 10.15.5 (catalina)
 
 ### Installation
-##### Option 1: Download installer and then run install.sh.
+Download a release and then run install.sh.
 ~~~
 sh ./install.sh
 ~~~
@@ -29,20 +29,17 @@ or
 sh ./install.sh <number of minutes allowed>
 ~~~
 
-##### Option 2: One-line install
-
-coming soon
-
 ### Uninstallation
 
-##### Option 1: Download installer and run remove.sh
+Download a release and run remove.sh
 
 ~~~
 sh ./remove.sh
 ~~~
 
-##### Option 2: One-line uninstall
+### Source Code
+https://github.com/tfield/minemon
 
-coming soon
-
+### License
+This project is licensed under the MIT License.
 

@@ -29,13 +29,13 @@ else
   sed -i.bak "s/__TIMELIMIT__/45/g" $plistfile >> $plistfile
 fi
 
-echo "Removing backup file"
+echo "Cleaning up"
 rm ${plistfile}.bak
 
 echo "Loading agent"
 launchctl load $plistfile
-echo "Starting agent"
-launchctl start ca.tonyfield.minecraftmonitor.agent
-echo "Checking agent"
-launchctl list | grep 'PID\|tonyfield'
+#echo "Starting agent"
+#launchctl start ca.tonyfield.minecraftmonitor.agent
+echo "Checking agent (status 0 is good)"
+launchctl list | grep 'PID\|ca.tonyfield.minecraftmonitor.agent'
 echo "Installation complete\n"

@@ -39,7 +39,3 @@ sh ./remove.sh
 
 ### Source Code
 https://github.com/tfield/minemon
-
-### License
-This project is licensed under the MIT License.
-

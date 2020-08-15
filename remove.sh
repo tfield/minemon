@@ -16,4 +16,12 @@ if [ -f ~/.minemon/minemon.sh ]; then
 else
   echo "Script not present - no need to uninstall"
 fi
+
+if [ -d ~/.minemon ]; then
+  echo "Removing installation directory"
+  rm -rf ~/.minemon
+else
+  echo "Installation directory not present - no need to uninstall"
+fi
+
 echo "Uninstallation Complete\n"

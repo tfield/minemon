@@ -26,9 +26,12 @@ checkMinecraftMinutes() {
 
   totalMins=0
   arr=($dataFolder/*)
-  for((i=0; i <${#arr[@]}; i++)); do
-    thisFileMin=$(<${arr[$i]})
-    totalMins=$(($totalMins+$thisFileMin))
+
+  for((i=0; i < ${#arr[@]}; i++)); do
+    if [ -f ${arr[$i]} ]; then
+      thisFileMin=$(<${arr[$i]})
+      totalMins=$(($totalMins+$thisFileMin))
+    fi
   done
   export minecraftMinutes=$totalMins
 
